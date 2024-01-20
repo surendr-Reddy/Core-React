@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="root">React not rendered</div>
+    <!-- create a element by useing java script -->
+<!-- <script>
+   const h1=document.createElement("h1");
+   h1.innerHTML='NamsteRaect by Akash Sani';
+  const root=document.getElementById("root");
+  root.appendChild(h1);
+  console.log(h1);
+</script> -->
+
+   <!-- create a element by useing React -->
+<script crossorigin="anonymous" src="https://unpkg.com/react@18/umd/react.development.js"></script><!-- for dev -->
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script><!-- for browser dom manupluation -->
+
+<script>
+   const div=React.createElement("div",{id:"div"},"");
+
+   const heading=React.createElement("h1",
+   {id:"child",className:"child",style:{backgroundColor:"ligthblue",color:"green",fontSize:"120px"}},"Namaste React");
+
+   const container=React.createElement('div',{id:"container"},[div,heading]);
+
+   const container1=React.createElement('div',{id:"main"},React.createElement("div",{id:"submain"},React.createElement("h1",{id:"h1"},"Namste react")));
+
+console.log(heading);//object
+   const root=ReactDOM.createRoot(document.getElementById("root"))
+   root.render(heading)
+
+</script>
+
+
+</body>
+</html>
