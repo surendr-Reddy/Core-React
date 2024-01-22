@@ -1,0 +1,26 @@
+{
+  "name": "core-react",
+  "version": "1.0.0",
+  "description": "the project is created for learning  pure core-react concepts ",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surendr-Reddy/Core-React.git"
+  },
+  "keywords": [
+    "\"react",
+    "core"
+  ],
+  "author": "surendra reddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surendr-Reddy/Core-React/issues"
+  },
+  "homepage": "https://github.com/surendr-Reddy/Core-React#readme",
+  "devDependencies": {
+    "parcel": "~2.11.0"
+  }
+}
